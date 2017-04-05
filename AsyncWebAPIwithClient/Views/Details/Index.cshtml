@@ -1,0 +1,26 @@
+﻿@using AsyncWebAPIwithClient.Models
+@model List<PersonInfo>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Index</h2>
+
+
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PersonName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+ 
+        </tr>
+    }
+
+</table>
+
